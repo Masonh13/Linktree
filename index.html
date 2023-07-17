@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,6 +41,7 @@
 
         #wrapper .header {
             padding: 1.5rem 0;
+            color: #ffffff; /* Set header text color to white */
         }
 
         #wrapper .header .modelev-logo {
@@ -62,8 +63,8 @@
             display: inline-block;
             position: relative;
             z-index: 2;
-            color: #051720;
-            background-color: rgba(255, 255, 255, 0);;
+            color: #ffffff; /* Set default link text color to white */
+            background-color: rgba(255, 255, 255, 0);
             padding: 18px 57px;
             transition: 0.3s;
         }
@@ -80,12 +81,17 @@
 
         #wrapper li img {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio */
             object-fit: contain;
             z-index: 1;
+        }
+
+        #wrapper li a[href="https://t.snapchat.com/9pBxrGpU"] {
+            color: #000000; /* Set Snapchat link text color to black */
         }
 
         #wrapper .spacer {
@@ -106,7 +112,8 @@
 <body>
     <div id="wrapper">
         <div class="header">
-            <img class="modelev-logo" src="assets/avatar.jpg"><br>
+            <img class="modelev-logo" src="assets/avatar.jpg" alt="Modelev Logo">
+            <br>
             Mason Hoey
         </div>
 
@@ -115,25 +122,23 @@
                 <a href="https://www.instagram.com/masonh13_/">
                     <img src="assets/Instagram_Banner.png" alt="Instagram Banner">
                     <span>@masonh13_</span>
-
                 </a>
             </li>
             <li>
                 <a href="https://www.threads.net/masonh13_/">
-				<img src="assets/Threads_Banner.png" alt="Instagram Banner">
+                    <img src="assets/Threads_Banner.png" alt="Threads Banner">
                     <span>@masonh13_</span>
                 </a>
             </li>
             <li>
                 <a href="https://t.snapchat.com/9pBxrGpU">
-				<img src="assets/Snapchat_Banner.png" alt="Instagram Banner">
+                    <img src="assets/Snapchat_Banner.png" alt="Snapchat Banner">
                     <span>@Mason_Hoey</span>
-                    
                 </a>
             </li>
             <li>
                 <a href="https://www.twitter.com/masonh13_/">
-				<img src="assets/Twitter_Banner.png" alt="Instagram Banner">
+                    <img src="assets/Twitter_Banner.png" alt="Twitter Banner">
                     <span>@masonh13_</span>
                 </a>
             </li>
@@ -141,7 +146,7 @@
 
         <div class="spacer"></div>
         <div class="footer">
-            <img class="footer-img" src="assets/logo-footer.png">
+            <img class="footer-img" src="assets/logo-footer.png" alt="Footer Logo">
         </div>
     </div>
 </body>
