@@ -67,6 +67,7 @@
             background-color: rgba(255, 255, 255, 0);
             padding: 18px 57px;
             transition: 0.3s;
+            border-radius: 30px; /* Added border radius to links */
         }
 
         #wrapper li a span {
@@ -76,6 +77,7 @@
 
         #wrapper li a:hover {
             background-color: #ffffff;
+            color: #5e35b1; /* Change text color on hover */
             transition: 0.3s;
         }
 
@@ -90,10 +92,6 @@
             z-index: 1;
         }
 
-        #wrapper li a[href="https://t.snapchat.com/9pBxrGpU"] {
-            color: #000000; /* Set Snapchat link text color to black */
-        }
-
         #wrapper .spacer {
             display: block;
             padding: 1.5rem 0;
@@ -106,6 +104,16 @@
         #wrapper .footer .footer-img {
             width: 128px;
             height: auto;
+        }
+
+        /* Modify the text color of the Snapchat link */
+        #wrapper li a[href="https://t.snapchat.com/9pBxrGpU"] {
+            color: #000000; /* Set Snapchat link text color to black */
+        }
+
+        /* Change text color on hover for the Snapchat link */
+        #wrapper li a[href="https://t.snapchat.com/9pBxrGpU"]:hover {
+            color: #5e35b1; /* Set Snapchat link text color to purple */
         }
     </style>
 </head>
@@ -142,11 +150,13 @@
                     <span>@masonh13_</span>
                 </a>
             </li>
+			 <li>
+                <a href="https://www.discordapp.com/users/480150344001912842/">
+                    <img src="assets/Discord_Banner.png" alt="Discord Banner">
+                    <span>@masonh13</span>
+                </a>
+            </li>
         </ul>
-
-        <div class="spacer"></div>
-        <div class="footer">
-            <img class="footer-img" src="assets/logo-footer.png" alt="Footer Logo">
         </div>
     </div>
 </body>
