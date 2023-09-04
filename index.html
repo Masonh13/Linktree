@@ -9,7 +9,7 @@
     <!-- Favicon links... -->
 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap%27');
 
         * {
             margin: 0;
@@ -17,7 +17,7 @@
             box-sizing: border-box;
             list-style: none;
             text-decoration: none;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
 
         body {
@@ -43,6 +43,7 @@
             padding: .5rem 0;
             color: #000000; /* Set header text color to white */
 			font-size: 1.5em;
+			font-weight: bold;
         }
 
         #wrapper .header .modelev-logo {
@@ -58,6 +59,8 @@
 
         #wrapper li {
             margin: .9rem;
+			user-select: none;
+			transition: 0.3s;
         }
 
         #wrapper li a {
@@ -76,18 +79,12 @@
             z-index: 3;
         }
 
-        #wrapper li a:hover {
-            background-color: #ffffff;
-            color: #5e35b1; /* Change text color on hover */
-            transition: 0.3s;
-        }
-
         #wrapper li img {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 200px; /* Adjust the width as needed */
+            width: 280px; /* Adjust the width as needed */
             height: auto; /* Maintain the aspect ratio */
             object-fit: contain;
             z-index: 1;
@@ -96,17 +93,6 @@
         #wrapper .spacer {
             display: block;
             padding: 1.5rem 0;
-        }
-
-
-        /* Modify the text color of the Snapchat link */
-        #wrapper li a[href="https://t.snapchat.com/9pBxrGpU"] {
-            color: #000000; /* Set Snapchat link text color to black */
-        }
-
-        /* Change text color on hover for the Snapchat link */
-        #wrapper li a[href="https://t.snapchat.com/9pBxrGpU"]:hover {
-            color: #5e35b1; /* Set Snapchat link text color to purple */
         }
     </style>
 </head>
@@ -121,36 +107,37 @@
         <ul>
             <li>
                 <a href="https://www.instagram.com/masonh13_/">
-                    <img src="assets/Instagram_Banner.png" alt="Instagram Banner">
-                    <span>@masonh13_</span>
+                    <img src="assets/Instagram_Banner.png" id="ig" alt="Instagram Banner">
+                    <span id="ig_cock">@masonh13_</span>
                 </a>
             </li>
             <li>
                 <a href="https://www.threads.net/masonh13_/">
-                    <img src="assets/Threads_Banner.png" alt="Threads Banner">
-                    <span>@masonh13_</span>
+                    <img src="assets/Threads_Banner.png" id="threads" alt="Threads Banner">
+                    <span id="threads_cock">@masonh13_</span>
                 </a>
             </li>
             <li>
                 <a href="https://t.snapchat.com/9pBxrGpU">
-                    <img src="assets/Snapchat_Banner.png" alt="Snapchat Banner">
-                    <span>@Mason_Hoey</span>
+                    <img src="assets/Snapchat_Banner.png" id="sc" alt="Snapchat Banner">
+                    <span id="sc_cock">@Mason_Hoey</span>
                 </a>
             </li>
             <li>
                 <a href="https://www.twitter.com/masonh13_/">
-                    <img src="assets/Twitter_Banner.png" alt="Twitter Banner">
-                    <span>@masonh13_</span>
+                    <img src="assets/Twitter_Banner.png" id="twt" alt="Twitter Banner">
+                    <span id="twt_cock">@masonh13_</span>
                 </a>
             </li>
 			 <li>
                 <a href="https://www.discordapp.com/users/480150344001912842/">
-                    <img src="assets/Discord_Banner.png" alt="Discord Banner">
-                    <span>@masonh13</span>
+                    <img src="assets/Discord_Banner.png" id="dickcord" alt="Discord Banner">
+                    <span id="dickcord_cock">@masonh13</span>
                 </a>
             </li>
         </ul>
         </div>
     </div>
+	<script src="script.js"></script>
 </body>
 </html>
