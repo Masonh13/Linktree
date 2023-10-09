@@ -9,8 +9,8 @@
     <!-- Favicon links... -->
 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap%27');
-
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
@@ -18,6 +18,34 @@
             list-style: none;
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
+        }
+
+        a:hover span {
+            transition: 0.3s;
+        }
+
+        #instagram:hover span {
+            color: #000000;
+        }
+
+        #threads:hover span {
+            color: #98b7ff;
+        }
+
+        #snapchat:hover span {
+            color: #ff4040;
+        }
+
+        #twitter:hover span {
+            color: #0005eb;
+        }
+
+        #discord:hover span {
+            color: #6500bd;
+        }
+
+        #snapchat span {
+            color: #000000;
         }
 
         body {
@@ -60,7 +88,7 @@
         #wrapper li {
             margin: .9rem;
 			user-select: none;
-			transition: 0.3s;
+			transition: 2s;
         }
 
         #wrapper li a {
@@ -70,7 +98,7 @@
             color: #ffffff; /* Set default link text color to white */
             background-color: rgba(255, 255, 255, 0);
             padding: 18px 57px;
-            transition: 0.3s;
+            transition: 2s;
             border-radius: 30px; /* Added border radius to links */
         }
 
@@ -106,31 +134,31 @@
 
         <ul>
             <li>
-                <a href="https://www.instagram.com/masonh13_/">
+                <a id="instagram" href="https://www.instagram.com/masonh13_/">
                     <img src="assets/Instagram_Banner.png" id="ig" alt="Instagram Banner">
                     <span id="ig_cock">@masonh13_</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.threads.net/masonh13_/">
+                <a id="threads" href="https://www.threads.net/masonh13_/">
                     <img src="assets/Threads_Banner.png" id="threads" alt="Threads Banner">
                     <span id="threads_cock">@masonh13_</span>
                 </a>
             </li>
             <li>
-                <a href="https://t.snapchat.com/9pBxrGpU">
+                <a id="snapchat" href="https://t.snapchat.com/9pBxrGpU">
                     <img src="assets/Snapchat_Banner.png" id="sc" alt="Snapchat Banner">
                     <span id="sc_cock">@Mason_Hoey</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.twitter.com/masonh13_/">
+                <a id="twitter" href="https://www.twitter.com/masonh13_/">
                     <img src="assets/Twitter_Banner.png" id="twt" alt="Twitter Banner">
                     <span id="twt_cock">@masonh13_</span>
                 </a>
             </li>
 			 <li>
-                <a href="https://www.discordapp.com/users/480150344001912842/">
+                <a id="discord" href="https://www.discordapp.com/users/480150344001912842/">
                     <img src="assets/Discord_Banner.png" id="dickcord" alt="Discord Banner">
                     <span id="dickcord_cock">@masonh13</span>
                 </a>
@@ -138,6 +166,5 @@
         </ul>
         </div>
     </div>
-	<script src="script.js"></script>
 </body>
 </html>
